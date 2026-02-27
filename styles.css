@@ -358,7 +358,9 @@ li {
 .citation-list li:nth-child(2)::after,
 .citation-list li:nth-child(3)::after,
 .citation-list li:nth-child(4)::after,
-.citation-list li:nth-child(5)::after {
+.citation-list li:nth-child(5)::after,
+.citation-list li:nth-child(6)::after,
+.citation-list li:nth-child(7)::after {
     content: "一作";
     display: inline-block;
     background-color: #def0ff;
@@ -373,7 +375,7 @@ li {
 }
 
 /* 匹配包含"导师一作"文本的列表项 */
-.citation-list li:nth-child(6)::after {
+.citation-list li:nth-child(8)::after {
     content: "导师一作";
     display: inline-block;
     background-color: transparent; /* 移除背景色 */
@@ -385,6 +387,7 @@ li {
     color: #000000; /* 与正文一致 */
     font-weight: normal; /* 与正文一致 */
 }
+
 
 /* ======================================
    11. 响应式布局调整
