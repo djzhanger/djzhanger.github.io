@@ -122,7 +122,7 @@ hf2:after {
 p {
     color:#0033cc; /* 蓝色文字 - 主要用于个人信息、技能等部分 */
     margin-bottom: 8px;
-    line-height: 1.6;
+    /* line-height: 1.5; */
     font-size: 14px;
 }
 
@@ -134,9 +134,8 @@ p {
     text-align: justify;
     text-justify: inter-character; /* 适合中文排版 */
     /* text-align-last: justify; 使最后一行也分散对齐 */
-    line-height: 1.6; /* 增加行间距 */
+    line-height: 1.8; /* 增加行间距 */
     /* margin-bottom: 10px; 增加段落间距 */
-    color: #000000;
 }
 
 /* ======================================
@@ -204,14 +203,12 @@ p {
 
 .work-role {
     color: #000000;
-    font-size: 15px;
     text-align: center;
     flex-shrink: 0;
 }
 
 .work-date {
     color: #666;
-    font-size: 15px;
     font-weight: bold;
     text-align: right;
     white-space: nowrap;
@@ -233,13 +230,12 @@ p {
 
 .work-list li {
     margin-bottom: 4px;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 14px;
 }
 
 .work-list li strong {
-    color: #000000;
-    font-weight: bold;
+    color: #0033cc;
 }
 
 /* ======================================
@@ -308,7 +304,7 @@ p {
     font-style: italic;
     font-weight: bold;
     color: #0033cc; /* 蓝色强调 */
-    margin: 8px 0;
+    margin: 5px 0;
 }
 
 /* 项目条目标题样式 */
@@ -330,7 +326,7 @@ ul {
 
 li {
     margin-bottom: 4px;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 14px;
 }
 
@@ -415,7 +411,8 @@ li {
 .citation-list li:nth-child(3)::after,
 .citation-list li:nth-child(4)::after,
 .citation-list li:nth-child(5)::after,
-.citation-list li:nth-child(6)::after {
+.citation-list li:nth-child(6)::after,
+.citation-list li:nth-child(7)::after {
     content: "一作";
     display: inline-block;
     background-color: #def0ff;
@@ -430,7 +427,7 @@ li {
 }
 
 /* 匹配包含"导师一作"文本的列表项 */
-.citation-list li:nth-child(7)::after {
+.citation-list li:nth-child(8)::after {
     content: "导师一作";
     display: inline-block;
     background-color: transparent; /* 移除背景色 */
@@ -466,7 +463,6 @@ li {
 
     .page {
         box-shadow: none;
-        overflow: visible;
         break-after: page;
         page-break-after: always;
     }
