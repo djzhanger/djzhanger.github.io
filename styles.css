@@ -8,11 +8,25 @@
 /* ======================================
    1. 基础设置和重置样式
    ====================================== */
+
+@font-face {
+    font-family: "SourceHanSans";
+    /* src: local("SourceHanSansSC-Light"); */
+    src: local("SourceHanSansSC-Normal");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SourceHanSans";
+    src: local("SourceHanSansSC-Bold");
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Microsoft YaHei", "SimHei", "SimSun", sans-serif; /* 使用中文常用字体 */
+    font-family: "SourceHanSans", "Microsoft YaHei", "SimHei", sans-serif;
 }
 
 /* ======================================
